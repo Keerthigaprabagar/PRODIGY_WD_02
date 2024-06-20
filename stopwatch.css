@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(222, 126, 93);
+}
+
+header, footer {
+    background-color: #282c34;
+    color: rgb(226, 223, 210);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.stopwatch {
+    background: rgb(243, 229, 171);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.time {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button#startStop {
+    background-color: #28a745;
+    color: rgb(255, 249, 246);
+}
+
+button#startStop.stop {
+    background-color: #dc3545;
+}
+
+button#lap {
+    background-color: #007bff;
+    color: rgb(255, 249, 246);
+}
+
+button#reset {
+    background-color: #6c757d;
+    color: rgb(255, 249, 246);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.laps {
+    list-style: none;
+    padding: 0;
+}
+
+.laps li {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
